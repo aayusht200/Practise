@@ -1,2 +1,2 @@
 hello world this is my first push.
-first pull sucessfull
+first pull successful
