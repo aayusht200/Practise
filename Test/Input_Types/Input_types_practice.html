@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: grid;
+            align-content: start;
+            padding: 10px;
+        }
+        #text {
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: grid;
+            align-content: space-evenly;
+            padding: 10px;
+        }
+        input:invalid, input:focus:invalid {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="text">
+            <h1>Input Form Practice</h1>
+            <h2>Personal Info Section</h2>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" name="tel"><br>
+
+            <label for="url">Website:</label>
+            <input type="url" id="url" name="url"><br>
+
+            <h2>Date & Time Section</h2>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+
+            <label for="m_time">Meeting Time:</label>
+            <input type="time" id="m_time" name="m_time"><br>
+
+            <label for="month">Preferred Month:</label>
+            <input type="month" id="month" name="month"><br>
+
+            <label for="week">Preferred Week:</label>
+            <input type="week" id="week" name="week"><br>
+
+            <label for="event_schedule">Event Schedule:</label>
+            <input type="datetime-local" id="event_schedule" name="event_schedule"><br>
+
+            <h2>Preference Section</h2>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color"><br>
+
+            <label for="search">Search Query:</label>
+            <input type="search" id="search" name="search"><br>
+
+            <label for="quantity">Product Quantity (1 to 10):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+
+            <label for="rating">Rating Slider (1 to 10):</label>
+            <input type="range" id="rating" name="rating" min="1" max="10"><br>
+
+            <button type="submit" id="submit" name="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

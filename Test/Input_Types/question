@@ -1,0 +1,46 @@
+### **🚀 HTML Input Types Code Challenge**  
+
+#### **Objective:**  
+Create a **multi-section form** that includes **all the HTML5 input types** covered. The form should collect user data and provide built-in validation.  
+
+---
+
+### **Challenge Requirements:**  
+1️⃣ **Personal Information Section**  
+   - Full Name (Text Input)  
+   - Email (Email Input)  
+   - Phone Number (Tel Input)  
+   - Website (URL Input)  
+
+2️⃣ **Date & Time Section**  
+   - Date of Birth (Date Input)  
+   - Meeting Time (Time Input)  
+   - Preferred Month (Month Input)  
+   - Preferred Week (Week Input)  
+   - Event Schedule (Datetime-local Input)  
+
+3️⃣ **Preferences Section**  
+   - Favorite Color (Color Picker)  
+   - Search Query (Search Input)  
+   - Product Quantity (Number Input with min/max)  
+   - Rating Slider (Range Input from 1-10)  
+
+4️⃣ **Submit Section**  
+   - Submit Button  
+
+---
+
+### **Additional Challenge:**  
+- Use **labels** correctly for each input field.  
+- Use **placeholders** where necessary.  
+- Use **required attributes** to ensure mandatory fields.  
+- Style the form using **CSS** for better presentation (optional).  
+
+---
+
+### **📌 Expected Outcome:**  
+A functional, **well-structured HTML form** that demonstrates the use of all modern input types.  
+
+---
+
+Once you finish coding, drop your solution here, and I’ll review it! 💪🔥
