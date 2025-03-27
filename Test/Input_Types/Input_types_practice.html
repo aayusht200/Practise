@@ -77,16 +77,23 @@
                     <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
                 
                     <label for="rating">Rating Slider (1 to 10):</label>
-                    <input type="range" id="rating" name="rating" min="1" max="10"><br>
+                    <output>1</output>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="5" oninput="this.previousElementSibling.textContent = this.value"><br>
                 </fieldset>
             
                 <fieldset>
                     <legend>Gender</legend>
                     <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
                     <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
-                    <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
+                    <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label><br><br>
+                    <select name="gender" id="gender">
+                        <option name="empty"></option>
+                        <option name="male">Male</option>
+                        <option name="female">Female</option>
+                        <option name="other">Other</option>
+                    </select>
                 </fieldset>
-            
+                
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
             </fieldset>            
