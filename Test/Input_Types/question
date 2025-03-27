@@ -23,7 +23,8 @@ Create a **multi-section form** that includes **all the HTML5 input types** cove
    - Favorite Color (Color Picker)  
    - Search Query (Search Input)  
    - Product Quantity (Number Input with min/max)  
-   - Rating Slider (Range Input from 1-10)  
+   - Rating Slider (Range Input from 1-10)
+   - Select Gender (radio) (Male / Female / Other)  
 
 4️⃣ **Submit Section**  
    - Submit Button  
