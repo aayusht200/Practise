@@ -2,15 +2,48 @@
 <html>
     <head>
         <title>Web Calculator Version Aayush</title>
+        <style>
+            #main{
+                padding: 10px;
+            }
+        </style>
     </head>
+    
     <body>
         <div id="main">
-            <div name="output" id="output"><output></output></div>
-            <div name="rowOne" id="rowOne"> 
-                <div name="rowOnebuttonOne" id="rowOnebuttonOne">
-                    <label for="allClear"
+            Hello World!
+            <div name="cal" id="cal"> 
+                <input type="text" id="output">
+                <div name="rowOne" id="rowOne">
+                    <input type="button" id="allClear" value="AC">
+                    <input type="button" id="negation" value="+/-">
+                    <input type="button" id="mod" value="%">
+                    <input type="button" id="divide" value="/">
                 </div>
-            
+                <div name="rowTwo" id="rowTwo">
+                    <input type="button" id="seven" value="7">
+                    <input type="button" id="eight" value="8">
+                    <input type="button" id="nine" value="9">
+                    <input type="button" id="multiplication" value="*">
+                </div>
+                <div name="rowThree" id="rowThree">
+                    <input type="button" id="four" value="4">
+                    <input type="button" id="five" value="5">
+                    <input type="button" id="six" value="6">
+                    <input type="button" id="minus" value="-">
+                </div>
+                <div name="rowFour" id="rowFour">
+                    <input type="button" id="one" value="1">
+                    <input type="button" id="two" value="2">
+                    <input type="button" id="three" value="3">
+                    <input type="button" id="plus" value="+">
+                </div>
+                <div name="rowFive" id="rowFive">
+                    <input type="button" id="delete" value="del">
+                    <input type="button" id="zero" value="0">
+                    <input type="button" id="decimalPoint" value=".">
+                    <input type="button" id="equal" value="=">
+                </div>            
             </div>
         </div>
     </body>
