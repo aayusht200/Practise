@@ -3,53 +3,91 @@
     <head>
         <title>Web Calculator Version Aayush</title>
         <style>
-            #main{
+            .main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .button{
+                width: 70px;
+                height: 40px;
+                text-align:end;
+                border-width: 0.1px;
+                border-radius: 10px;
+                margin: 1px;
+                color:white;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                box-shadow:2px 2px 5px black;
+            }
+            .button:hover{
+                transform:scale(1.05);
+
+            }
+            .outputCss{
+                width: 274px;
+                align-content: center;
+                margin:1px ;
+                border:0px;
+                font-size: 30px;
+                text-align: end;
+                height: 40px;
                 padding: 10px;
+                padding-bottom: 10px;
+                background-color: #1C1C1C;
+                color: white;
             }
-            #cal{
+            .row{
                 display: flex;
+                gap: 4px;
             }
-            input{
-                display: flex;
+            form{
+                padding: 10px;
+                border-width: 3px;
+                border-radius: 10px;
+                background-color: #1C1C1C;
             }
         </style>
     </head>
     
     <body>
-        <div id="main">
-            <div name="cal" id="cal"> 
-                <input type="text" id="output">
-                <div name="rowOne" id="rowOne">
-                    <input type="button" id="allClear" value="AC">
-                    <input type="button" id="negation" value="+/-">
-                    <input type="button" id="mod" value="%">
-                    <input type="button" id="divide" value="/">
+        <div class="main" name="calculator">
+            <form>
+                <div for="output">
+                    <input type="text" id="output" class="outputCss">
                 </div>
-                <div name="rowTwo" id="rowTwo">
-                    <input type="button" id="seven" value="7">
-                    <input type="button" id="eight" value="8">
-                    <input type="button" id="nine" value="9">
-                    <input type="button" id="multiplication" value="*">
+                <div class="buttons">
+                    <div class="row">
+                        <input type="button" class="button" id="clear" value="AC"style="background-color: #D4D4D2;">
+                        <input type="button" class="button" id="negation" value="+/-"style="background-color: #D4D4D2;"> 
+                        <input type="button" class="button" id="modalus" value="%" style="background-color: #D4D4D2;">
+                        <input type="button" class="button" id="divide"   value="/" style="background-color: #FF9500;">
+                    </div>
+                    <div class="row">
+                        <input type="button" class="button" id="seven" value="7"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="eight" value="8"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="nine" value="9"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="multiply" value="*"style="background-color: #FF9500;">
+                    </div>
+                    <div class="row">
+                        <input type="button" class="button" id="four"  value="4"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="five"  value="5"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="six" value="6"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="minus" value="-"style="background-color: #FF9500;">
+                    </div>
+                    <div class="row">
+                        <input type="button" class="button" id="one" value="1"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="two" value="2"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="three" value="3"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="plus" value="+"style="background-color: #FF9500;">
+                    </div>
+                    <div class="row">
+                        <input type="button" class="button" id="delete" value="Del"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="zero" value="0"style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="decimal" value="."style="background-color: #1C1C1C;">
+                        <input type="button" class="button" id="equal" value="="style="background-color: #FF9500;">
+                    </div>
                 </div>
-                <div name="rowThree" id="rowThree">
-                    <input type="button" id="four" value="4">
-                    <input type="button" id="five" value="5">
-                    <input type="button" id="six" value="6">
-                    <input type="button" id="minus" value="-">
-                </div>
-                <div name="rowFour" id="rowFour">
-                    <input type="button" id="one" value="1">
-                    <input type="button" id="two" value="2">
-                    <input type="button" id="three" value="3">
-                    <input type="button" id="plus" value="+">
-                </div>
-                <div name="rowFive" id="rowFive">
-                    <input type="button" id="delete" value="del">
-                    <input type="button" id="zero" value="0">
-                    <input type="button" id="decimalPoint" value=".">
-                    <input type="button" id="equal" value="=">
-                </div>            
-            </div>
-        </div>
+            </form>
     </body>
 </html>
