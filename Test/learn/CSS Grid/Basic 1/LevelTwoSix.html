@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Layout – Level Two Six</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1em;
+      padding: 10px;
+      border: 1px solid;
+    }
+    .container > div {
+      border: 1px solid;
+      padding: 10px;
+    }
+
+    .boxOne   { grid-column: span 2; background-color: lightblue; }
+    .boxTwo   { grid-row: span 2;background-color: lightcoral;}
+    .boxThree { grid-column: span 2; background-color: lightcyan; }
+    .boxFour  { grid-row: span 2; background-color: lightgoldenrodyellow; }
+    .boxFive  { grid-column: span 2; background-color: lightgray; }
+    .boxSix   { grid-row: span 2; background-color: lightgreen; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="boxOne"><h1>Box 1</h1>Lorem ipsum dolor sit amet...</div>
+    <div class="boxTwo"><h1>Box 2</h1>Lorem ipsum dolor sit amet...</div>
+    <div class="boxThree"><h1>Box 3</h1>Lorem ipsum dolor sit amet...</div>
+    <div class="boxFour"><h1>Box 4</h1>Lorem ipsum dolor sit amet...</div>
+    <div class="boxFive"><h1>Box 5</h1>Lorem ipsum dolor sit amet...</div>
+    <div class="boxSix"><h1>Box 6</h1>Lorem ipsum dolor sit amet...</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level Three Nine,Ten, Eleven – Nested Grids</title>
+  <style>
+    .container {
+      display: grid;
+      gap: 5px;
+      border: 1px solid;
+      padding: 1px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .container > div {
+      border: 1px solid;
+      padding: 10px;
+    }
+
+    .boxOne { background-color: lightblue; }
+    .boxTwo { background-color: lightcoral; }
+    .boxThree { background-color: lightcyan; }
+    .boxFour { background-color: lightgoldenrodyellow; }
+    .boxFive { background-color: lightgray; }
+
+    .boxSix {
+      display: grid;
+      background-color: lightgreen;
+      grid-template-columns: repeat(2, 100px);
+      gap: 5px;
+    }
+
+    .nestedBox {
+      border: 1px solid;
+      padding: 10px;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="boxOne"><h1>Box 1</h1>Lorem ipsum dolor</div>
+    <div class="boxTwo"><h1>Box 2</h1>Lorem ipsum dolor</div>
+    <div class="boxThree"><h1>Box 3</h1>Lorem ipsum dolor</div>
+    <div class="boxFour"><h1>Box 4</h1>Lorem ipsum dolor</div>
+    <div class="boxFive"><h1>Box 5</h1>Lorem ipsum dolor</div>
+    <div class="boxSix">
+      <div class="nestedBox"><h1>6.1</h1>Lorem</div>
+      <div class="nestedBox"><h1>6.2</h1>Lorem</div>
+      <div class="nestedBox"><h1>6.3</h1>Lorem</div>
+      <div class="nestedBox"><h1>6.4</h1>Lorem</div>
+      <div class="nestedBox"><h1>6.5</h1>Lorem</div>
+      <div class="nestedBox"><h1>6.6</h1>Lorem</div>
+    </div>
+  </div>
+</body>
+</html>
