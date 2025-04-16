@@ -6,30 +6,59 @@
     <title>Level One</title>
     <style>
         .container{
-            padding: 1em;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            border: 1px solid;
-            row-gap: 1em;
-            column-gap: 1em;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+            background-color: lightsteelblue;
+            padding: 1rem;
+            border-radius: 1rem;
         }
-        .container div{
-            border: 1px solid;
+        .container>div{
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
-        .one{
-            grid-column: 1/4;
-            background-color: antiquewhite;
+        .container>div:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
+        }
+        @media(min-width:40rem){
+            .container{
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+            }
+            .boxOne{
+                grid-column: span 3;
+            }
+        }
+        .boxOne{
+            background-color: lightblue;
+        }
+        .boxTwo{
+            background-color: lightcoral;
+        }
+        .boxThree{
+            background-color: lightcyan;
+        }
+        .boxFour{
+            background-color: lightgoldenrodyellow;
+        }
+        .boxFive{
+            background-color: lightgray;
+        }
+        .boxSix{
+            background-color: lightgreen;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nostrum laborum totam debitis error quidem, inventore possimus officiis reiciendis? Eum quas vitae inventore totam in iure voluptas ullam quaerat iste.</div>
-        <div class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam repudiandae itaque, doloribus eaque eligendi, earum molestiae ducimus harum cum repellat nihil explicabo in nesciunt at sed eum accusamus similique.</div>
-        <div class="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam repudiandae itaque, doloribus eaque eligendi, earum molestiae ducimus harum cum repellat nihil explicabo in nesciunt at sed eum accusamus similique.</div>
-        <div class="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam repudiandae itaque, doloribus eaque eligendi, earum molestiae ducimus harum cum repellat nihil explicabo in nesciunt at sed eum accusamus similique.</div>
-        <div class="five">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam repudiandae itaque, doloribus eaque eligendi, earum molestiae ducimus harum cum repellat nihil explicabo in nesciunt at sed eum accusamus similique.</div>
-        <div class="six">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam repudiandae itaque, doloribus eaque eligendi, earum molestiae ducimus harum cum repellat nihil explicabo in nesciunt at sed eum accusamus similique.</div>
-    </div>
+        <div class="boxOne"><h1>Box 1</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt, illo animi vitae possimus in quam distinctio. Ad, et expedita natus, facilis unde adipisci impedit eligendi assumenda doloremque veniam sit!</p></div>
+        <div class="boxTwo"><h1>Box 2</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt, illo animi vitae possimus in quam distinctio. Ad, et expedita natus, facilis unde adipisci impedit eligendi assumenda doloremque veniam sit!</p></div>
+        <div class="boxThree"><h1>Box 3</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt, illo animi vitae possimus in quam distinctio. Ad, et expedita natus, facilis unde adipisci impedit eligendi assumenda doloremque veniam sit!</p></div>
+        <div class="boxFour"><h1>Box 4</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt, illo animi vitae possimus in quam distinctio. Ad, et expedita natus, facilis unde adipisci impedit eligendi assumenda doloremque veniam sit!</p></div>
+        <div class="boxFive"><h1>Box 5</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt, illo animi vitae possimus in quam distinctio. Ad, et expedita natus, facilis unde adipisci impedit eligendi assumenda doloremque veniam sit!</p></div>
+        <div class="boxSix"><h1>Box 6</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt, illo animi vitae possimus in quam distinctio. Ad, et expedita natus, facilis unde adipisci impedit eligendi assumenda doloremque veniam sit!</p></div>
+      </div>
 </body>
 </html>
