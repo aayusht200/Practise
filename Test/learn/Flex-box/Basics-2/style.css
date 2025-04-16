@@ -34,11 +34,7 @@ h1 {
 .links a {
   display: block;
   margin: 5px 0;
-}
-img {
-  width: 100px;
-  height: 150px;
-  border-radius: var(--border-radius);
+  font-size: 1rem;
 }
 /* Navbar */
 .navbar {
@@ -110,10 +106,24 @@ a:hover {
   background-color: rgb(255, 243, 227);
   gap: 1em;
   flex: 1 1 300px;
-  font-size: 18px;
 }
 footer div {
   flex: 1 1 200px;
   box-sizing: border-box;
   padding: var(--padding);
+}
+.sectionHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionHeader h4{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 1rem;
+  max-height: 10rem;
+}
+.poster img{
+  max-height: 10rem;
+  border-radius: 10px;
 }
