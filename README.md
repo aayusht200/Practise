@@ -23,3 +23,11 @@ This project contains various practice exercises related to HTML, CSS, and JavaS
 1. Clone this repository:
    ```bash
    git clone https://github.com/aayusht200/Practise.git
+Goals
+To master modern web development techniques.
+To better understand frontend design and layout systems.
+Contributions
+This is a personal practice repository, but feedback or suggestions are welcome! Feel free to open issues or pull requests.
+
+Author
+Aayush Trivedi
